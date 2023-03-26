@@ -30,8 +30,8 @@ export const Imagem = styled.img`
   height: 103px;
   position: absolute;
   top: -60px;
-
   z-index: 2;
+  cursor: pointer;
 `;
 
 export const Title = styled.p`
