@@ -20,11 +20,6 @@ padding: 50px;
    color : #05445e ;
   }
 
-  button{
-    align-items: center;
-    background-color: red;
-    width: 30px;
-  }
 
  
 `;

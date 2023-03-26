@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const ContainerCards = styled.div`
   padding: 50px;
   background-color: #d4f1f4;
-  width: 40%;
+  width: 80%;
   margin: 10px;
-  margin-left: 30%;
   margin-top: 10%;
   transform-style: preserve-3d;
   border-radius: 20px;
