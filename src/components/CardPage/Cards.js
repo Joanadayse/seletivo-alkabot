@@ -1,11 +1,24 @@
 import { useState } from "react";
-import Comments from "../Comments/Comments";
-import { ContainerCards, Imagem, Title, Paragraf } from "./styled";
+import Comments from "../../Pages/commentsPage/Comments";
+
+import { ContainerCards, Imagem, Title, Button } from "./styled";
 
 export default function Cards({ id, title, body }) {
   const [showElement, setShowElement] = useState(false);
   const showOrHide = () => {
     setShowElement(true);
+  };
+
+  const closePage = () => {
+    setShowElement("");
+  };
+
+  const button = () => {
+    if (!showElement) {
+      return <Button onClick={showOrHide}>open comments</Button>;
+    } else {
+      return <Button onClick={closePage}>close comments </Button>;
+    }
   };
 
   return (
@@ -18,9 +31,8 @@ export default function Cards({ id, title, body }) {
           alt="foto"
         />
         <Title>Title: {title}</Title>
-        <Paragraf>{body}</Paragraf>
-
-        <button onClick={showOrHide}>comentarios</button>
+        <p>{body}</p>
+        {button()}
       </ContainerCards>
 
       <div>{showElement ? <Comments id={id} /> : null}</div>

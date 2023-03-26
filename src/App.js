@@ -1,15 +1,17 @@
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import HomePage from "./homePage/HomePage";
+
+import GlobalState from "./context/GlobalState";
 import Router from "./router/Router";
 
 
 function App() {
   return (
-  <>
-  <Router/>
   
-  </>
+ <GlobalState>
+   <Router/>
+ </GlobalState>
+
+  
+  
   );
 }
 

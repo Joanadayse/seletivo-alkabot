@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Comments from "../components/Comments/Comments";
-import HomePage from "../homePage/HomePage";
+import Comments from "../Pages/commentsPage/Comments";
+import HomePage from "../Pages/homePage/HomePage";
 
 
 export default function Router(){
